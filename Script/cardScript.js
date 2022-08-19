@@ -346,7 +346,7 @@ function loadMostSellingData(){
         "<p class=\"card-text\">"+mostSelling[i].description+"</p>"+
         "<div class=\"row\">"+
         "<p class=\"card-text price col-lg-8 col-md-6 col-xs-8\">"+mostSelling[i].price+"$</p>"+
-        "<img src=\"../Styling/bootstrap-icons-1.7.1/bookmark-plus.svg\" class=\"col-lg-2 col-md-2 col-xs-2 bookmarkIcon\" type=\"button\">"+
+        "<img src=\"Styling/bootstrap-icons-1.7.1/bookmark-plus.svg\" class=\"col-lg-2 col-md-2 col-xs-2 bookmarkIcon\" type=\"button\">"+
         "</div>"+
         "<button href=\"#\" class=\"btn btn-primary signUp\" onclick=\"addToCart("+mostSelling[i].id+")\">Add To Cart</button>"+              
         "</div>";
