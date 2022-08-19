@@ -222,13 +222,13 @@ mostSelling = [
         },{
             "id":"2",
             "description" : "American Refreshment Coffe, The First Thing You need To try in the morning",
-            "src" : "../Images/Drinks/american_coffee.jpg",
+            "src" : "Images/Drinks/american_coffee.jpg",
             "name" : "American Coffee",
             "price" : "10.25",
         },{
             "id":"3",
             "description" : "is a popular dessert that combines the elements of a chocolate cake and a soufflé.",
-            "src" : "../Images/Desserts/molten_cake.png",
+            "src" : "Images/Desserts/molten_cake.png",
             "name" : "molten cake",
             "price" : "25",
           },{
@@ -240,13 +240,13 @@ mostSelling = [
         },{
             "id":"5",
             "description" : "a dessert consisting of a creamy filling usually containing cheese baked in a pastry or pressed-crumb shell",
-            "src" : "../Images/Desserts/cheesecakee.png",
+            "src" : "Images/Desserts/cheesecakee.png",
             "name" : "Cheese Cake",
             "price" : "24",
           },{
             "id":"6",
             "description" : "You Can't Face the world without a cup of tea, get it now and go get them tiger",
-            "src" : "../Images/Drinks/tea.jpg",
+            "src" : "Images/Drinks/tea.jpg",
             "name" : "Tea",
             "price" : "10",
           }];
