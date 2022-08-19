@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!--
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>Mat3amy</title>
+        <link rel="icon" type="image/x-icon" href="../Images/Logos/anotherLogo.png">
+
+        <link href="../Styling/Bootstrap 5/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../Styling/Bootstrap 3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../Styling/style.css" rel="stylesheet">
+    </head>
+    <body onload="displayMessage(), loadDessertsData()">
+      <!--Navbar-->
+      <div class="row">
+        <div class="col-xs-12">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                
+                <a href="#">
+                    <img src="../Images/Logos/anotherLogo.png" width="50" height="50" alt="logo">
+                    Mat3amy
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="nav nav-tabs col-lg-9 col-md-8 col-xs-12">
+                        <li class="col-md-2 col-xs-12">
+                            <a href="index.html">
+                                <img src="../Styling/bootstrap-icons-1.7.1/house-fill.svg" alt="house Icon">
+                                Home
+                            </a>
+                        </li>
+                        <li class="col-md-2 col-xs-12">
+                            <a href="about.html">
+                                <img src="../Styling/bootstrap-icons-1.7.1/info-circle-fill.svg" alt="info Icon">
+                                About
+                            </a>
+                        </li>   
+                        <li class="col-md-2 col-xs-12">
+                            <a href="cart.html">
+                                <img src="../Styling/bootstrap-icons-1.7.1/cart-fill.svg" alt="cart Icon">
+                                Cart
+                            </a>
+                        </li>
+                        <li class="dropdown col-md-2 col-xs-12 active">
+                          <a class="dropdown-toggle font-weight-bold" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                            Categories</a>
+                            <ul class="dropdown-menu">
+                            <li class="col-xs-12"><a class="dropdown-item" href="sandwiches.html">Sandwiches</a></li>
+                            <li class="col-xs-12"><hr class="dropdown-divider"></li>
+                            <li class="col-xs-12"><a class="dropdown-item" href="drinks.html">Drinks</a></li>
+                            <li class="col-xs-12"><a class="dropdown-item" href="desserts.html">Desserts</a></li>
+
+                          </ul>
+                        </li>
+                    </ul>
+
+                    <div class="col-lg-3 col-md-4 col-xs-12" id="buttons">
+                        <button class="btn btn-primary col-lg-5 col-xs-12 signUp" type="button"
+                        data-target="#loginModal" data-toggle="modal">
+                            <img src="../Styling/bootstrap-icons-1.7.1/person-fill.svg" alt="Person Icon">
+                            Login
+                        </button>
+                        <button class="btn btn-primary col-lg-5 col-xs-12 signUp" type="button"
+                        data-target="#registerModal" data-toggle="modal">
+                            <img src="../Styling/bootstrap-icons-1.7.1/person-plus-fill.svg" alt="Person Icon">
+                            Reister
+                        </button>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-xs-12">
+
+                      <div class="dropdown col-md-2 col-xs-12">
+                            <h4 id="welcomeLabel" class="dropdown-toggle font-weight-bold" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">..</h4>
+                            <ul class="dropdown-menu">
+                            <li class="col-xs-12"><a class="dropdown-item" href="#">Profile</a></li>
+                            <li class="col-xs-12"><a class="dropdown-item" href="#">Wishlist</a></li>
+                            <li class="col-xs-12"><hr class="dropdown-divider"></li>
+                            <li class="col-xs-12"><a class="dropdown-item" href="#" onclick="logout()">Logout</a></li>
+                          </ul>
+                      </div>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </div>
+            <!--Navbar-->
+
+            <!--carousel-->
+            <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <ol class="carousel-indicators">
+                <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../Images/Desserts/Carousel/slide1.jpg" class="d-block w-100" alt="..." width="80%" height="400">
+                </div>
+                <div class="carousel-item">
+                  <img src="../Images/Desserts/Carousel/slide3.jpg" class="d-block w-100" alt="..." width="80%" height="400">
+                </div>
+                <div class="carousel-item">
+                  <img src="../Images/Desserts/Carousel/slide2.jpg" class="d-block w-100" alt="..." width="80%" height="400">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+              <!--Carsoul-->
+
+
+
+                  
+              
+
+                <div class="container-fluid homeSide">
+                    <h1 class="text-center text-uppercase">
+                        Desserts
+                      </h1>
+                      <div class="offset-lg-2 offset-md-2" id="dessertSide">
+                       
+                      </div>
+        </div>  
+        <!--Login Modal-->
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="modal fade" id="loginModal" tabindex="-1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Login</h4>
+                                    <button type="button" class="close col-xs-offset-10" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="txtUsername">Username</label>
+                                            <input class="form-control" type="text" id="txtUsername"
+                                             placeholder="Login Username">
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="txtPassword">Password</label>
+                                          <input type="password" id="txtPassword" class="form-control"
+                                           placeholder="Enter Password">
+                                        </div>
+                                    </form>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-primary" type="button" data-dismiss="modal" onclick="logIn()">Login</button>
+                                        <button class="btn btn-danger" data-dismiss="modal" type="button">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Login Modal-->
+
+
+        <!--Sign Up Modal-->
+        <div class="container">
+            <div class="row">
+                <div class="modal fade" id="registerModal" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Resister</h4>
+                                <button type="button" class="close col-xs-offset-10" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                               <form>
+                                <div class="form-group">
+                                  <label for="txtName">Name</label>
+                                  <input type="text" id="txtName" class="form-control" placeholder="Enter Name">
+                                </div>
+                                   <div class="form-group">
+                                       <label for="txtEmail">Username</label>
+                                       <input type="email" id="txtEmail" class="form-control" placeholder="Enter Email">
+                                   </div>
+                                   <div class="form-group">
+                                       <label for="txtPasswordRegistered">Password</label>
+                                       <input id="txtPasswordRegistered" class="form-control" type="password" placeholder="Enter Password">
+                                   </div>
+                                   <div class="form-group">
+                                       <label for="txtPasswordAgain">Re-Enter Password</label>
+                                       <input id="txtPasswordAgain" class="form-control" type="password" placeholder="Re-enter password">
+                                   </div>
+                               </form>
+                               <div class="modal-footer">
+                                   <button class="btn btn-primary" type="button" data-target="#loginModal" data-toggle="modal" data-dismiss="modal" onclick="signup()">Register</button>
+                                   <button class="btn btn-danger" data-dismiss="modal" type="button">Close</button>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        <!--Sign Up Modal-->    
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+    <!-- Section: Social media -->
+    <section
+      class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+    >
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks</span>
+      </div>
+      <!-- Left -->
+  
+
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Coders Invasion
+            </h6>
+            <p>
+              We Are Team Of Students Who seek to be the best and do our best.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Members
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Eslam Amin</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Yussif Mohamed</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Esraa Sayed</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Rofayda Mohamed</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Email
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Eslam@gmail.com</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Yussif@gmail.com</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Esraa@gmail.com</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Rofayda@gmail.com</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Contact
+            </h6>
+            <p>
+              <i class="fas fa-home me-3"></i>
+              <a href="tel:01099007326">
+                <img src="../Styling/bootstrap-icons-1.7.1/phone.svg" alt="phone">
+              </a>
+              <a href="https://www.facebook.com/ECaAmiNOo" target="blank">
+                <img src="../Styling/bootstrap-icons-1.7.1/facebook.svg" alt="Facebook">
+              </a>
+              <a href="https://www.instagram.com/iameca/" target="blank">
+                <img src="../Styling/bootstrap-icons-1.7.1/instagram.svg" alt="Instagram">
+              </a>
+            </p>
+            <p>
+              <i class="fas fa-home me-3"></i>
+              <a href="tel:01060203431">
+                <img src="../Styling/bootstrap-icons-1.7.1/phone.svg" alt="phone">
+              </a>
+              <a href="https://www.facebook.com/yuosef.kahilo" target="blank">
+                <img src="../Styling/bootstrap-icons-1.7.1/facebook.svg" alt="Facebook">
+              </a>
+              <a href="https://www.instagram.com/yussifkahilo/" target="blank">
+                <img src="../Styling/bootstrap-icons-1.7.1/instagram.svg" alt="Instagram">
+              </a>
+            </p>
+            <p>
+              <i class="fas fa-home me-3"></i>
+              <a href="tel:01212272845">
+                <img src="../Styling/bootstrap-icons-1.7.1/phone.svg" alt="phone">
+              </a>
+              <a href="https://www.facebook.com/esraa.sayed1312" target="blank">
+                <img src="../Styling/bootstrap-icons-1.7.1/facebook.svg" alt="Facebook">
+              </a>
+              <a href="https://www.instagram.com/esraasayed.7/" target="blank">
+                <img src="../Styling/bootstrap-icons-1.7.1/instagram.svg" alt="Instagram">
+              </a>
+            </p>
+            <p>
+                <i class="fas fa-home me-3"></i>
+                <a href="01065576019">
+                  <img src="../Styling/bootstrap-icons-1.7.1/phone.svg" alt="phone">
+                </a>
+                <a href="https://www.facebook.com/rofayda.mohammad515" target="blank">
+                  <img src="../Styling/bootstrap-icons-1.7.1/facebook.svg" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/rofayda_26/" target="blank">
+                  <img src="../Styling/bootstrap-icons-1.7.1/instagram.svg" alt="Instagram">
+                </a>
+          </p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" id="footer">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="#">Coders Invasion</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+        <script src="../Script/jquery-1.9.1.min.js"></script>
+
+        <!--<script src="jquery-3.6.0.min.js"></script>-->
+        <script src="../Styling/Bootstrap 5/js/bootstrap.min.js"></script>
+
+        <script src="../Styling/Bootstrap 3/js/bootstrap.min.js"></script>
+        <script src="../Script/script.js"></script>
+        <script src="../Script/cardScript.js"></script>
+
+    </body>
+</html>

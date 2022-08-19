@@ -1,0 +1,180 @@
+body{
+    width: 99%;
+    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+    text-transform: capitalize;
+}
+
+img{
+    margin:auto;
+}
+
+.signUp{
+    color:black;
+    margin: 5px;
+    background-color:#F4a442;
+
+}
+
+.signUp:hover{
+    background-color: #A9333A;
+}
+
+.btnQuant{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.myHorizontalCard{
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+
+.txtPrice{
+    text-align: center;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.home{
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
+
+fieldset{
+    margin-top: 5%;
+}
+
+p{
+    color:lightslategray;
+}
+
+.price{
+    color:rgb(22, 29, 36);
+    font-size: 25px;
+}
+
+.cardsMargin{
+    margin: 10px;
+    padding: 10px;
+    height: 500px;
+}
+
+.cardsMargin:hover{
+    transform: translateY(-10px);
+}
+
+#footer{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+h1{
+    font-family: 'Dancing Script', cursive;
+}
+
+.MostSelling img{
+    opacity: .9;
+    background-color: white;
+}
+
+.cardsMargin .left{
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    
+}
+
+.cardsMargin .center{
+    border-radius: 50px;
+}
+
+.cardsMargin .right{
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+}
+/*img:hover*/
+.MostSelling:hover {
+	transform: translateY(-10px);
+    opacity: 1;
+    transform: translate(-5px, -10px) rotate(-5deg) scale(1.1);
+}
+
+#welcomeLabel{
+    display: none;
+}
+
+.carousel-caption p, .carousel-caption h2{
+    color: #000000;
+}
+
+.homeSide{
+    background-image: url("../Images/logos/doodle-4861309_1920.jpg");
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+/*
+.homeSide::before{
+    z-index:-1;
+    position:absolute;
+    left:0;
+    top:0;
+    /*background-image: url("../Images/logos/doodle-4861309_1920.jpg");
+    opacity:0.4;
+}*/
+
+.bookmarkIcon:hover{
+    content: url("../Styling/bootstrap-icons-1.7.1/bookmark-plus-fill.svg");
+}
+
+/* for flipping a card*/
+/*
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect 
+  }
+  
+  /* This container is needed to position the front and back side 
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container 
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side 
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari 
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) 
+  .flip-card-front {
+    color: black;
+  }
+  
+  /* Style the back side 
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  */
