@@ -114,100 +114,100 @@ drinkItems = [
     {
         "id":"",
         "description" : "American Refreshment Coffe, The First Thing You need To try in the morning",
-        "src" : "../Images/Drinks/american_coffee.jpg",
+        "src" : "https://i.postimg.cc/qqf3DYyv/american-coffee.jpg",
         "name" : "American Coffee",
         "price" : "10.25",
     },{
         "id":"",
-        "description" : "What is better than Juice? it's berry Juice",
-        "src" : "../Images/Drinks/berry_delight.jpeg",
+        "description" : "What is better than Juice? it's berry Juice",  
+        "src" : "https://i.postimg.cc/0NnvBJSM/berry-delight.jpg",
         "name" : "Berry Delight Juice",
         "price" : "12",
       },{
         "id":"",
         "description" : "espresso mixed with hot or steamed milk",
-        "src" : "../Images/Drinks/latte.jpg",
+        "src" : "https://i.postimg.cc/bvyckN5z/latte.jpg",
         "name" : "Latte",
         "price" : "12.50",
       },{
         "id":"",
         "description" : "espresso coffee topped with frothed hot milk or cream and often flavored with cinnamon",
-        "src" : "../Images/Drinks/cappuccino.jpeg",
+        "src" : "https://i.postimg.cc/wvbp6809/cappuccino.jpg",
         "name" : "Cappuccino",
         "price" : "14",
       },{
         "id":"",
         "description" : "coffee brewed by forcing hot water through finely ground darkly roasted coffee beans",
-        "src" : "../Images/Drinks/espresso.jpg",
+        "src" : "https://i.postimg.cc/t4HHRztn/espresso.jpg",
         "name" : "espresso",
         "price" : "12",
       },{
         "id":"",
         "description" : "a beverage made by mixing chocolate with water or milk",
-        "src" : "../Images/Drinks/frosty_chocolate_shake.jpg",
+        "src" : "https://i.postimg.cc/wjcY1s0f/frosty-chocolate-shake.jpg",
         "name" : "Frosty Chocolate Shake",
         "price" : "12.75",
       },{
         "id":"",
         "description" : "Hybrid between a mocha and a cappuccino. Basically, it's a cappuccino that's made with chocolate powder or sauce. ",
-        "src" : "../Images/Drinks/chocolate_mochaccino.jpg",
+        "src" : "https://i.postimg.cc/SR2pRTvC/chocolate-mochaccino.jpg",
         "name" : "Mochaccino",
         "price" : "18",
       },{
         "id":"",
         "description" : "Minty Juice With A touch of a lemon make your mouth smells good",
-        "src" : "../Images/Drinks/lemon_juice.jpg",
+        "src" : "https://i.postimg.cc/RFhkpp9y/lemon-juice.jpg",
         "name" : "Lemon Juice",
         "price" : "10",
       },{
         "id":"",
         "description" : "You know how Trukish people love their Coffee? you'll know if you ordered Our turkish Coffee Now",
-        "src" : "../Images/Drinks/turkish_coffee.jpg",
+        "src" : "https://i.postimg.cc/9fQXVpCt/turkish-coffee.jpg",
         "name" : "turkish Coffee",
         "price" : "12",
       },{
         "id":"",
         "description" : "You Can't Face the world without a cup of tea, get it now and go get them tiger",
-        "src" : "../Images/Drinks/tea.jpg",
+        "src" : "https://i.postimg.cc/cLm1VjyL/tea.jpg",
         "name" : "Tea",
         "price" : "10",
       }];
 
-      
+      //https://postimg.cc/gallery/jxVRR5P
       dessertItems=[{
         "id":"",
         "description" : "a dessert consisting of a creamy filling usually containing cheese baked in a pastry or pressed-crumb shell",
-        "src" : "../Images/Desserts/cheesecakee.png",
+        "src" : "https://i.postimg.cc/Jnsctvb1/cheesecakee.png",
         "name" : "Cheese Cake",
         "price" : "24",
       },{
         "id":"",
         "description" : "a small often cone-shaped bit of food often used for baking",
-        "src" : "../Images/Desserts/chocolate_chip_paradise_ie.png",
+        "src" : "https://i.postimg.cc/90TdY98K/chocolate-chip-paradise-ie.png",
         "name" : "Chocolate Chip Paradise",
         "price" : "22",
       },{
         "id":"",
         "description" : "is a popular dessert that combines the elements of a chocolate cake and a soufflé.",
-        "src" : "../Images/Desserts/molten_cake.png",
+        "src" : "https://i.postimg.cc/7Zq3Sfgt/molten-cake.png",
         "name" : "molten cake",
         "price" : "25",
       },{
         "id":"",
         "description" : " a breadlike food made from a dough or batter that is usually fried or baked in small flat shapes and is often unleavened",
-        "src" : "../Images/Desserts/dessert.jpg",
+        "src" : "https://i.postimg.cc/zXZSXd3r/dessert.jpg",
         "name" : "Dessert",
         "price" : "22.27",
       },{
         "id":"",
         "description" : "a sweet flavored frozen food containing cream or butterfat and usually eggs",
-        "src" : "../Images/Desserts/cold_stone_icecream.png",
+        "src" : "https://i.postimg.cc/Y9TNFR3Q/cold-stone-icecream.png",
         "name" : "Coldstone Ice cream",
         "price" : "20",
       },{
         "id":"",
         "description" : " are small turnovers made with a thin dough, similar to a pasta dough that is crimped at the edges and fried.",
-        "src" : "../Images/Desserts/pastelillos_de_queso_y_guyaba.png",
+        "src" : "https://i.postimg.cc/g24vsmsz/pastelillos-de-queso-y-guyaba.png",
         "name" : "pastelillos de quesoy Guyaba",
         "price" : "21",
       }];
@@ -222,13 +222,13 @@ mostSelling = [
         },{
             "id":"2",
             "description" : "American Refreshment Coffe, The First Thing You need To try in the morning",
-            "src" : "Images/Drinks/american_coffee.jpg",
+            "src" : "https://i.postimg.cc/qqf3DYyv/american-coffee.jpg  ",
             "name" : "American Coffee",
             "price" : "10.25",
         },{
             "id":"3",
             "description" : "is a popular dessert that combines the elements of a chocolate cake and a soufflé.",
-            "src" : "Images/Desserts/molten_cake.png",
+            "src" : "https://i.postimg.cc/7Zq3Sfgt/molten-cake.png",
             "name" : "molten cake",
             "price" : "25",
           },{
@@ -240,13 +240,13 @@ mostSelling = [
         },{
             "id":"5",
             "description" : "a dessert consisting of a creamy filling usually containing cheese baked in a pastry or pressed-crumb shell",
-            "src" : "Images/Desserts/cheesecakee.png",
+            "src" : "https://i.postimg.cc/Jnsctvb1/cheesecakee.png",
             "name" : "Cheese Cake",
             "price" : "24",
           },{
             "id":"6",
             "description" : "You Can't Face the world without a cup of tea, get it now and go get them tiger",
-            "src" : "Images/Drinks/tea.jpg",
+            "src" : "https://i.postimg.cc/cLm1VjyL/tea.jpg",
             "name" : "Tea",
             "price" : "10",
           }];
@@ -271,7 +271,7 @@ function loadSandwichesData(){
     for(let i=0 ;i<sandwichItems.length;i++){
         let sandwichesDiv = document.createElement("div");
         sandwichesDiv.innerHTML = 
-        "<div class=\"card col-lg-3 col-md-5 col-sm-10 col-xs-12 cardsMargin\">"+
+        "<div class=\"card col-lg-3 col-md-5 col-sm-8 col-xs-10 cardsMargin\">"+
         "<img src="+sandwichItems[i].src+" class=\"card-img-top\" alt=\"src\" height=\"150\">"+
         "<h3 class=\"card-title\">"+sandwichItems[i].name+"</h3>"+
         "<p class=\"card-text\">"+sandwichItems[i].description+"</p>"+
@@ -295,7 +295,7 @@ function loadDrinksData(){
     for(let i=0 ;i<drinkItems.length;i++){
         let drinksDiv = document.createElement("div");
         drinksDiv.innerHTML =
-        "<div class=\"card col-lg-3 col-md-5 col-sm-10 col-xs-12 cardsMargin\">"+
+        "<div class=\"card col-lg-3 col-md-5 col-sm-8 col-xs-10 cardsMargin\">"+
         "<img src="+drinkItems[i].src+" class=\"card-img-top\" alt=\"src\" height=\"150\">"+
         "<h3 class=\"card-title\">"+drinkItems[i].name+"</h3>"+
         "<p class=\"card-text\">"+drinkItems[i].description+"</p>"+
@@ -318,7 +318,7 @@ function loadDessertsData(){
     for(let i=0 ;i<dessertItems.length;i++){
         let dessertsDiv = document.createElement("div");
         dessertsDiv.innerHTML = 
-        "<div class=\"card col-lg-3 col-md-5 col-sm-10 col-xs-12 cardsMargin\">"+
+        "<div class=\"card col-lg-3 col-md-5 col-sm-8 col-xs-10 cardsMargin\">"+
         "<img src="+dessertItems[i].src+" class=\"card-img-top\" alt=\"src\" height=\"150\">"+
         "<h3 class=\"card-title\">"+dessertItems[i].name+"</h3>"+
         "<p class=\"card-text\">"+dessertItems[i].description+"</p>"+
@@ -340,7 +340,7 @@ function loadMostSellingData(){
     for(let i=0;i<mostSelling.length;i++){
         let mostSellingDiv = document.createElement("div");
         mostSellingDiv.innerHTML=
-    "<div class=\"card col-lg-3 col-md-5 col-sm-10 col-xs-12 cardsMargin MostSelling \">"+
+    "<div class=\"card col-lg-3 col-md-5 col-sm-8 col-xs-10 cardsMargin MostSelling \">"+
         "<img src="+mostSelling[i].src+" class=\"card-img-top\" alt=\"src\" height=\"150\">"+
         "<h3 class=\"card-title\">"+mostSelling[i].name+"</h3>"+
         "<p class=\"card-text\">"+mostSelling[i].description+"</p>"+
@@ -362,7 +362,7 @@ function loadCartData(){
     for(let i=0;i<cartItem.length;i++){
         let cartDiv = document.createElement("div");
         cartDiv.innerHTML=
-        "<div class=\"card col-lg-3 col-md-5 col-sm-10 col-xs-12 cardsMargin\">"+
+        "<div class=\"card col-lg-3 col-md-5 col-sm-8 col-xs-10 cardsMargin\">"+
         "<img src="+cartItem[i].src+" class=\"card-img-top\" alt=\"image\" height=\"150\">"+
         "<h2 class=\"card-title\">"+cartItem[i].name+"</h2>"+
         "<p class=\"card-text\">"+cartItem[i].description+"</p>"+
